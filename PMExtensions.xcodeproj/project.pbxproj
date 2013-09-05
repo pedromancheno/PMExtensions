@@ -14,6 +14,7 @@
 		F352047A17D8D02E003A5BF2 /* libPMExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F352046117D8D02E003A5BF2 /* libPMExtensions.a */; };
 		F352048017D8D02E003A5BF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F352047E17D8D02E003A5BF2 /* InfoPlist.strings */; };
 		F352048317D8D02E003A5BF2 /* PMExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F352048217D8D02E003A5BF2 /* PMExtensionsTests.m */; };
+		F352049617D8DEEF003A5BF2 /* NSError+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = F352049517D8DEEF003A5BF2 /* NSError+PM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		F352047F17D8D02E003A5BF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F352048117D8D02E003A5BF2 /* PMExtensionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMExtensionsTests.h; sourceTree = "<group>"; };
 		F352048217D8D02E003A5BF2 /* PMExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMExtensionsTests.m; sourceTree = "<group>"; };
+		F352049417D8DEEF003A5BF2 /* NSError+PM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+PM.h"; sourceTree = "<group>"; };
+		F352049517D8DEEF003A5BF2 /* NSError+PM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+PM.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 			children = (
 				F352046917D8D02E003A5BF2 /* PMExtensions.h */,
 				F352046717D8D02E003A5BF2 /* Supporting Files */,
+				F352049417D8DEEF003A5BF2 /* NSError+PM.h */,
+				F352049517D8DEEF003A5BF2 /* NSError+PM.m */,
 			);
 			path = PMExtensions;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F352049617D8DEEF003A5BF2 /* NSError+PM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
