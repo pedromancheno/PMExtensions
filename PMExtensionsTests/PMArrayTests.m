@@ -17,10 +17,10 @@
     NSArray *array = nil;
     
     array = @[@0, @1, @2, @3];
-    STAssertEquals(@0, array.firstObject, @"Element returned by 'firstObject' method is not the first.");
+    STAssertEqualObjects(@0, array.firstObject, @"Element returned by 'firstObject' method is not the first.");
     
     array = @[@0];
-    STAssertEquals(@0, array.firstObject, @"Element returned by 'firstObject' method is not the only one.");
+    STAssertEqualObjects(@0, array.firstObject, @"Element returned by 'firstObject' method is not the only one.");
     
     array = nil;
     STAssertNil(array.firstObject, @"Element returned by 'firstObject' method is not nil.");
@@ -31,13 +31,39 @@
     NSArray *array = nil;
     
     array = @[@0, @1, @2, @3];
-    STAssertEquals(@3, array.lastObject, @"Element returned by 'lastObject' method is not the last.");
+    STAssertEqualObjects(@3, array.lastObject, @"Element returned by 'lastObject' method is not the last.");
     
     array = @[@0];
-    STAssertEquals(@0, array.lastObject, @"Element returned by 'lastObject' method is not the only one.");
+    STAssertEqualObjects(@0, array.lastObject, @"Element returned by 'lastObject' method is not the only one.");
     
     array = nil;
     STAssertNil(array.lastObject, @"Element returned by 'lastObject' method is not nil.");
+}
+
+- (void)testMap
+{
+    NSArray *array = @[@"a", @"b", @"c", @"d"];
+    NSString *expectedString =@"A,B,C,D";
+    
+    NSArray *newArray = [array map:^id(id object) {
+        return [object uppercaseString];
+    }];
+    
+    NSString *newString = [newArray componentsJoinedByString:@","];
+    STAssertEqualObjects(newString, expectedString, @"Array was not mapped correctly");
+}
+
+- (void)testSelect
+{
+    NSArray *array = @[@"apple", @"orange", @"apple", @"orange"];
+    NSString *expectedString = @"apple,apple";
+    
+    NSArray *appleArray = [array select:^BOOL(id object) {
+        return [object isEqual:@"apple"];
+    }];
+    
+    NSString *newString = [appleArray componentsJoinedByString:@","];
+    STAssertEqualObjects(newString, expectedString, @"Array was not selected correctly");
 }
 
 @end

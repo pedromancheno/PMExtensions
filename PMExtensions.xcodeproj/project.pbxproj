@@ -15,6 +15,7 @@
 		F352048017D8D02E003A5BF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F352047E17D8D02E003A5BF2 /* InfoPlist.strings */; };
 		F352049017D8D67C003A5BF2 /* NSArray+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = F352048F17D8D67C003A5BF2 /* NSArray+PM.m */; };
 		F352049317D8D9DB003A5BF2 /* PMArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F352049217D8D9DB003A5BF2 /* PMArrayTests.m */; };
+		F352049F17D8FAB0003A5BF2 /* NSArray+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = F352048F17D8D67C003A5BF2 /* NSArray+PM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F352049317D8D9DB003A5BF2 /* PMArrayTests.m in Sources */,
+				F352049F17D8FAB0003A5BF2 /* NSArray+PM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
