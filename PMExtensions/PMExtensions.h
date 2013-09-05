@@ -6,8 +6,4 @@
 //  Copyright (c) 2013 Pedro Mancheno. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface PMExtensions : NSObject
-
-@end
+#import "NSArray+PM.h"
