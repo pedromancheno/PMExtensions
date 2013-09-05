@@ -13,7 +13,8 @@
 		F352047717D8D02E003A5BF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F352046417D8D02E003A5BF2 /* Foundation.framework */; };
 		F352047A17D8D02E003A5BF2 /* libPMExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F352046117D8D02E003A5BF2 /* libPMExtensions.a */; };
 		F352048017D8D02E003A5BF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F352047E17D8D02E003A5BF2 /* InfoPlist.strings */; };
-		F352048317D8D02E003A5BF2 /* PMExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F352048217D8D02E003A5BF2 /* PMExtensionsTests.m */; };
+		F352049017D8D67C003A5BF2 /* NSArray+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = F352048F17D8D67C003A5BF2 /* NSArray+PM.m */; };
+		F352049317D8D9DB003A5BF2 /* PMArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F352049217D8D9DB003A5BF2 /* PMArrayTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +49,10 @@
 		F352047317D8D02E003A5BF2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F352047D17D8D02E003A5BF2 /* PMExtensionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PMExtensionsTests-Info.plist"; sourceTree = "<group>"; };
 		F352047F17D8D02E003A5BF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F352048117D8D02E003A5BF2 /* PMExtensionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMExtensionsTests.h; sourceTree = "<group>"; };
-		F352048217D8D02E003A5BF2 /* PMExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMExtensionsTests.m; sourceTree = "<group>"; };
+		F352048E17D8D67C003A5BF2 /* NSArray+PM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PM.h"; sourceTree = "<group>"; };
+		F352048F17D8D67C003A5BF2 /* NSArray+PM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PM.m"; sourceTree = "<group>"; };
+		F352049117D8D9DB003A5BF2 /* PMArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMArrayTests.h; sourceTree = "<group>"; };
+		F352049217D8D9DB003A5BF2 /* PMArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMArrayTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F352046617D8D02E003A5BF2 /* PMExtensions */,
+				F352046717D8D02E003A5BF2 /* Supporting Files */,
 				F352047B17D8D02E003A5BF2 /* PMExtensionsTests */,
 				F352046317D8D02E003A5BF2 /* Frameworks */,
 				F352046217D8D02E003A5BF2 /* Products */,
@@ -106,7 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				F352046917D8D02E003A5BF2 /* PMExtensions.h */,
-				F352046717D8D02E003A5BF2 /* Supporting Files */,
+				F352048E17D8D67C003A5BF2 /* NSArray+PM.h */,
+				F352048F17D8D67C003A5BF2 /* NSArray+PM.m */,
 			);
 			path = PMExtensions;
 			sourceTree = "<group>";
@@ -117,13 +122,14 @@
 				F352046817D8D02E003A5BF2 /* PMExtensions-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = PMExtensions;
 			sourceTree = "<group>";
 		};
 		F352047B17D8D02E003A5BF2 /* PMExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				F352048117D8D02E003A5BF2 /* PMExtensionsTests.h */,
-				F352048217D8D02E003A5BF2 /* PMExtensionsTests.m */,
+				F352049117D8D9DB003A5BF2 /* PMArrayTests.h */,
+				F352049217D8D9DB003A5BF2 /* PMArrayTests.m */,
 				F352047C17D8D02E003A5BF2 /* Supporting Files */,
 			);
 			path = PMExtensionsTests;
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F352049017D8D67C003A5BF2 /* NSArray+PM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F352048317D8D02E003A5BF2 /* PMExtensionsTests.m in Sources */,
+				F352049317D8D9DB003A5BF2 /* PMArrayTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
