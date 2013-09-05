@@ -13,10 +13,14 @@
 		F352047717D8D02E003A5BF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F352046417D8D02E003A5BF2 /* Foundation.framework */; };
 		F352047A17D8D02E003A5BF2 /* libPMExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F352046117D8D02E003A5BF2 /* libPMExtensions.a */; };
 		F352048017D8D02E003A5BF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F352047E17D8D02E003A5BF2 /* InfoPlist.strings */; };
+<<<<<<< HEAD
 		F352049017D8D67C003A5BF2 /* NSArray+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = F352048F17D8D67C003A5BF2 /* NSArray+PM.m */; };
 		F352049317D8D9DB003A5BF2 /* PMArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F352049217D8D9DB003A5BF2 /* PMArrayTests.m */; };
-		F352049617D8DEEF003A5BF2 /* NSError+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = F352049517D8DEEF003A5BF2 /* NSError+PM.m */; };
 		F352049F17D8FAB0003A5BF2 /* NSArray+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = F352048F17D8D67C003A5BF2 /* NSArray+PM.m */; };
+=======
+		F352048317D8D02E003A5BF2 /* PMExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F352048217D8D02E003A5BF2 /* PMExtensionsTests.m */; };
+		F352049617D8DEEF003A5BF2 /* NSError+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = F352049517D8DEEF003A5BF2 /* NSError+PM.m */; };
+>>>>>>> error_extensions
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,18 +49,23 @@
 /* Begin PBXFileReference section */
 		F352046117D8D02E003A5BF2 /* libPMExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPMExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F352046417D8D02E003A5BF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F352046817D8D02E003A5BF2 /* PMExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PMExtensions-Prefix.pch"; sourceTree = "<group>"; };
 		F352046917D8D02E003A5BF2 /* PMExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMExtensions.h; sourceTree = "<group>"; };
 		F352047217D8D02E003A5BF2 /* PMExtensionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMExtensionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F352047317D8D02E003A5BF2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F352047D17D8D02E003A5BF2 /* PMExtensionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PMExtensionsTests-Info.plist"; sourceTree = "<group>"; };
 		F352047F17D8D02E003A5BF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		F352048E17D8D67C003A5BF2 /* NSArray+PM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PM.h"; sourceTree = "<group>"; };
 		F352048F17D8D67C003A5BF2 /* NSArray+PM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PM.m"; sourceTree = "<group>"; };
 		F352049117D8D9DB003A5BF2 /* PMArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMArrayTests.h; sourceTree = "<group>"; };
 		F352049217D8D9DB003A5BF2 /* PMArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMArrayTests.m; sourceTree = "<group>"; };
+=======
+		F352048117D8D02E003A5BF2 /* PMExtensionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMExtensionsTests.h; sourceTree = "<group>"; };
+		F352048217D8D02E003A5BF2 /* PMExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMExtensionsTests.m; sourceTree = "<group>"; };
 		F352049417D8DEEF003A5BF2 /* NSError+PM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+PM.h"; sourceTree = "<group>"; };
 		F352049517D8DEEF003A5BF2 /* NSError+PM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+PM.m"; sourceTree = "<group>"; };
-		F35204AA17D8FED1003A5BF2 /* PMExtensions-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PMExtensions-Prefix.pch"; sourceTree = "<group>"; };
+>>>>>>> error_extensions
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				F352046617D8D02E003A5BF2 /* PMExtensions */,
+				F352046717D8D02E003A5BF2 /* Supporting Files */,
 				F352047B17D8D02E003A5BF2 /* PMExtensionsTests */,
 				F352046317D8D02E003A5BF2 /* Frameworks */,
 				F352046217D8D02E003A5BF2 /* Products */,
@@ -113,12 +123,24 @@
 			isa = PBXGroup;
 			children = (
 				F352046917D8D02E003A5BF2 /* PMExtensions.h */,
+<<<<<<< HEAD
 				F352048E17D8D67C003A5BF2 /* NSArray+PM.h */,
 				F352048F17D8D67C003A5BF2 /* NSArray+PM.m */,
+=======
+				F352046717D8D02E003A5BF2 /* Supporting Files */,
 				F352049417D8DEEF003A5BF2 /* NSError+PM.h */,
 				F352049517D8DEEF003A5BF2 /* NSError+PM.m */,
-				F35204A917D8FEBF003A5BF2 /* Supporting Files */,
+>>>>>>> error_extensions
 			);
+			path = PMExtensions;
+			sourceTree = "<group>";
+		};
+		F352046717D8D02E003A5BF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F352046817D8D02E003A5BF2 /* PMExtensions-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			path = PMExtensions;
 			sourceTree = "<group>";
 		};
@@ -137,14 +159,6 @@
 			children = (
 				F352047D17D8D02E003A5BF2 /* PMExtensionsTests-Info.plist */,
 				F352047E17D8D02E003A5BF2 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F35204A917D8FEBF003A5BF2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F35204AA17D8FED1003A5BF2 /* PMExtensions-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -247,8 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				F352049017D8D67C003A5BF2 /* NSArray+PM.m in Sources */,
+=======
 				F352049617D8DEEF003A5BF2 /* NSError+PM.m in Sources */,
+>>>>>>> error_extensions
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
