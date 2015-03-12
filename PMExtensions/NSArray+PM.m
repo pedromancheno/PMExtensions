@@ -8,6 +8,9 @@
 
 #import "NSArray+PM.h"
 
+#import "NSDictionary+PM.h"
+#import "NSSet+PM.h"
+
 @implementation NSArray (PM)
 
 - (id)firstObject
@@ -42,6 +45,24 @@
 {
     return [self map:^id(id object) {
         return block(object) ? object : nil;
+    }];
+}
+
+- (NSArray*)arrayByRemovingNulls
+{
+    return [self map:^id(id obj) {
+        
+        if (obj == [NSNull null])
+            return nil;
+        
+        if ([obj respondsToSelector:@selector(dictionaryByRemovingNulls)])
+            return [obj dictionaryByRemovingNulls];
+        else if ([obj respondsToSelector:@selector(arrayByRemovingNulls)])
+            return [obj arrayByRemovingNulls];
+        else if ([obj respondsToSelector:@selector(setByRemovingNulls)])
+            return [obj setByRemovingNulls];
+        
+        return obj;
     }];
 }
 

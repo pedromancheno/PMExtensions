@@ -52,4 +52,9 @@
  */
 - (NSArray *)select:(BOOL (^)(id object))block;
 
+/*!
+ Returns a copy of the array with all objects that are NSNull instances removed.
+ */
+- (NSArray*)arrayByRemovingNulls;
+
 @end

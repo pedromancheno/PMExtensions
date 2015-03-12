@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F05DEA81AA4C4E300F57720 /* UIAlertView+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F05DEA71AA4C4E300F57720 /* UIAlertView+PM.m */; };
+		0FD316751AB1EA9600324E58 /* NSDictionary+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD316741AB1EA9600324E58 /* NSDictionary+PM.m */; };
+		0FD316781AB1EB8000324E58 /* NSSet+PM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD316771AB1EB8000324E58 /* NSSet+PM.m */; };
 		F352046517D8D02E003A5BF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F352046417D8D02E003A5BF2 /* Foundation.framework */; };
 		F352046A17D8D02E003A5BF2 /* PMExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F352046917D8D02E003A5BF2 /* PMExtensions.h */; };
 		F352047417D8D02E003A5BF2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F352047317D8D02E003A5BF2 /* SenTestingKit.framework */; };
@@ -46,6 +48,10 @@
 /* Begin PBXFileReference section */
 		0F05DEA61AA4C4E300F57720 /* UIAlertView+PM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+PM.h"; sourceTree = "<group>"; };
 		0F05DEA71AA4C4E300F57720 /* UIAlertView+PM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+PM.m"; sourceTree = "<group>"; };
+		0FD316731AB1EA9600324E58 /* NSDictionary+PM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PM.h"; sourceTree = "<group>"; };
+		0FD316741AB1EA9600324E58 /* NSDictionary+PM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PM.m"; sourceTree = "<group>"; };
+		0FD316761AB1EB8000324E58 /* NSSet+PM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+PM.h"; sourceTree = "<group>"; };
+		0FD316771AB1EB8000324E58 /* NSSet+PM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+PM.m"; sourceTree = "<group>"; };
 		F352046117D8D02E003A5BF2 /* libPMExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPMExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F352046417D8D02E003A5BF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F352046917D8D02E003A5BF2 /* PMExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMExtensions.h; sourceTree = "<group>"; };
@@ -118,6 +124,10 @@
 				F352046917D8D02E003A5BF2 /* PMExtensions.h */,
 				F352048E17D8D67C003A5BF2 /* NSArray+PM.h */,
 				F352048F17D8D67C003A5BF2 /* NSArray+PM.m */,
+				0FD316731AB1EA9600324E58 /* NSDictionary+PM.h */,
+				0FD316741AB1EA9600324E58 /* NSDictionary+PM.m */,
+				0FD316761AB1EB8000324E58 /* NSSet+PM.h */,
+				0FD316771AB1EB8000324E58 /* NSSet+PM.m */,
 				F352049417D8DEEF003A5BF2 /* NSError+PM.h */,
 				F352049517D8DEEF003A5BF2 /* NSError+PM.m */,
 				0F05DEA61AA4C4E300F57720 /* UIAlertView+PM.h */,
@@ -252,9 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD316781AB1EB8000324E58 /* NSSet+PM.m in Sources */,
 				F352049017D8D67C003A5BF2 /* NSArray+PM.m in Sources */,
 				0F05DEA81AA4C4E300F57720 /* UIAlertView+PM.m in Sources */,
 				F352049617D8DEEF003A5BF2 /* NSError+PM.m in Sources */,
+				0FD316751AB1EA9600324E58 /* NSDictionary+PM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
