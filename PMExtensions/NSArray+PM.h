@@ -57,4 +57,14 @@
  */
 - (NSArray*)arrayByRemovingNulls;
 
+/*!
+ Returns a copy of the receiving array sorted by using a given key path for comparison.
+ */
+- (NSArray *)sortedArrayUsingKey:(NSString*)key ascending:(BOOL)ascending;
+
+/*!
+ Returns a copy of the receiving array sorted by using a given key path for comparison.
+ */
+- (NSArray *)sortedArrayUsingKey:(NSString*)key ascending:(BOOL)ascending selector:(SEL)selector;
+
 @end
